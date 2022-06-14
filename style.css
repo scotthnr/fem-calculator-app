@@ -1,0 +1,189 @@
+/* RESET ALL */
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+/* MAIN */
+
+html, body
+{
+    height: 100%;
+    width: 100%;
+    font-family: "League Spartan", serif;
+}
+
+body
+{
+    background: hsl(222, 26%, 31%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* CALCULATOR */
+
+#calculator
+{
+    width: 30%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3%;
+}
+
+/* CALCULATOR HEADER */
+
+#calculator-header
+{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+
+#calculator-header h2
+{
+    font-size: 35px;
+    color: white;
+    margin-left: 10px;
+}
+
+
+/* SWITCH BUTTON */
+
+#switch-theme
+{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#switch-theme p
+{
+    color: white;
+    margin-bottom: 3%;
+}
+
+#theme
+{
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+#theme-switcher
+{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#theme-nb
+{
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+#switcher
+{
+    width: 100%;
+    height: 40%;
+    background-color: hsl(223, 31%, 20%);
+    border-radius: 1000px;
+    padding: 6px;
+}
+
+#switcher-dot
+{
+    width: 29%;
+    height: 100%;
+    background-color: hsl(6, 63%, 50%);
+    border-radius: 1000px;
+    cursor: pointer;
+}
+
+/* CALCULATOR SCREEN */
+
+#calculator-screen
+{
+    width: 100%;
+    height: 20%;
+    background-color: hsl(224, 36%, 15%);
+    border-radius: 10px;
+}
+
+/* KEYPAD */
+
+#calculator-keypad
+{
+    width: 100%;
+    height: 70%;
+    background-color: hsl(223, 31%, 20%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5%;
+}
+
+.btnrow
+{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btn
+{
+    width: 21%;
+    height: 100%;
+    border-radius: 12px;
+    background-color: hsl(30, 25%, 89%);
+    border: none;
+    box-shadow: 0px 4px 0px 0px hsl(28, 16%, 65%);
+    cursor: pointer;
+    font-family: "League Spartan", serif;
+    font-size: 32px;
+    padding-top: 5px;
+    color: hsl(198, 20%, 13%);
+}
+
+#resetbtn, #equalbtn
+{
+    width: 47%;
+}
+
+#delbtn, #resetbtn
+{
+    color: white;
+    background-color: hsl(225, 21%, 49%);
+    box-shadow: 0px 4px 0px 0px hsl(224, 28%, 35%);
+}
+
+#equalbtn
+{
+    color: white;
+    background-color: hsl(6, 63%, 50%);
+    box-shadow: 0px 4px 0px 0px hsl(6, 70%, 34%);
+}
